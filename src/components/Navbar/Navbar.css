@@ -1,9 +1,14 @@
 .nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 40px 120px;
     color: white;
+
+    @media (min-width:992px) {
+        flex-direction: row;
+    }
 }
 
 .nav-menu {
@@ -11,7 +16,11 @@
     align-items: center;
     list-style: none;
     font-size: 18px;
-    gap: 90px;
+    gap: 50px;
+
+    @media (min-width:1070px) {
+        gap: 90px;
+    }
 }
 
 .nav-contact {
